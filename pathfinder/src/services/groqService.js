@@ -58,7 +58,7 @@ export async function sendChatMessage({ userMessage, chatHistory, learnerName, g
       Authorization: `Bearer ${GROQ_KEY}`,
     },
     body: JSON.stringify({
-      model: "llama3-8b-instant",  // Free, fast Llama 3 on Groq infrastructure
+      model: "llama-3.1-8b-instant",  // Free, fast Llama 3 on Groq infrastructure
       messages,
       max_tokens: 400,
       temperature: 0.6,         // Slightly higher — conversational tone is fine here
